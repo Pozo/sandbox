@@ -1,0 +1,14 @@
+before_install:
+  - npm -version
+  - java -version
+script:
+  - mvn install
+install:
+  - mvn version
+before_script:
+after_success:
+after_failure:
+after_script:
+before_deploy:
+deploy:
+after_deploy:
